@@ -1,0 +1,149 @@
+
+
+
+/* Add space between navbar items */
+.navbar-nav .nav-item {
+  margin-right: 20px; /* Adjust this value as needed */
+}
+
+.typing-loop {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  width: 0;
+  animation: typing 2s steps(20, end) infinite alternate;
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+
+
+#changing-text {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.skill-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Projects Section Background */
+/* Project Card Wrapper */
+.project-card {
+  background-color: #212529; /* dark background for contrast */
+  color: #ffffff;
+  border: none;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image Styling */
+.project-card img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+/* Card Hover Effect */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Title */
+.project-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Button Styling */
+.project-card .btn-outline-light {
+  border-width: 2px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-card .btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #212529;
+  border-color: #ffffff;
+}
+
+
+
+/* Style each education item like a card */
+.education-item {
+  background-color: rgb(52, 52, 84);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for education cards */
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings inside cards */
+.education-item h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs inside cards */
+.education-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .education-item {
+    margin-bottom: 15px; /* Adds margin on small screens */
+  }
+}
+
+footer i {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer i:hover {
+  color: #0d6efd;
+  transform: scale(1.2);
+}
+form input,
+form textarea {
+  transition: all 0.3s ease;
+  border: 1px solid #ccc;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
+  outline: none;
+}
+
+form input:hover,
+form textarea:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+
