@@ -1,326 +1,493 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-
-        body{
-            background: #2f2f34;
-             }   
-        .bg-image{
-            background-image: url(images/img.jpg);
-            background-size: cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            } 
-            
-            .text-overlay {
-            color: white;
-            font-size: 2rem;
-            font-weight: bold;
-            text-align: center;
-           
-            padding: 20px;
-            border-radius: 10px;
-            }
-
-        .about{
-             height: 100vh;
-           }
-
-       
-    .skill-box {
-    transition: all 0.3s ease-in-out;
-    border: 2px solid white;
-    }
-
-.skill-box:hover {
-    border-color: cyan;
-    box-shadow: 0px 0px 15px cyan;
-    transform: scale(1.05);
-}
-
-
-
-        
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-      <!--Navbar start--> 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-                <div class="container-fluid ms-5">
-                  <a class="navbar-brand" href="#">Vinayak</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item ms-3">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                      </li>
-                      <li class="nav-item ms-3">
-                        <a class="nav-link" href="#aboutMe">About</a>
-                      </li>
-                      <li class="nav-item ms-3">
-                        <a class="nav-link" href="#education">Education</a>
-                       </li>
-                       <li class="nav-item ms-3">
-                        <a class="nav-link" href="#skills">Skills</a>
-                       </li>
-                      
-                      <li class="nav-item ms-3">
-                        <a class="nav-link " href="#project">Projects</a>
-                      </li>
-                      <li class="nav-item ms-3">
-                        <a class="nav-link " href="#contact">Contact</a>
-                      </li>
-                    </ul>
-                    
-                  </div>
-                </div>
-      </nav>
-       <!--Navbar end--> 
-
-       <!--Intro Starts-->
-       <div class="text-white container-fluid bg-image" id="home">
-             <div class="text-overlay">
-               <h1>Vinayak &nbsp;Kumkar</h1>
-               <h1>I'm Developer</h1> 
-             </div>   
-       </div>
-
-       <!--Intro ends-->
-
-       <!--About me start-->
-       <div class="container d-flex flex-column justify-content-center align-items-center text-center text-white vh-100" id="aboutMe">
-                
-                            
-                            
-                <h1 class=>About Me</h1>
-                <hr class="w-25 mx-auto mb-5">
-
-                <h5 class="w-75">
-                                Highly motivated Computer Engineering graduate with a strong foundation in software and web development.
-                                Proficient in Java, HTML, CSS, JavaScript, ReactJS, Python, SQL and MongoDB. Experienced in building responsive web applications and
-                                implementing machine learning models. Demonstrates strong problem-solving skills, attention to detail, and
-                                eagerness to contribute to impactful projects in a dynamic team environment..
-                </h5>
-                <a href="#project" class="btn btn-outline-light mt-5">See Projects</a>
-                
-       </div>    
-       <!--About me end-->
-
-      <!-- Education start -->
-<div class="container-fluid d-flex flex-column justify-content-center align-items-center text-center text-white py-5" id="education">
-  <h1>Education</h1>
-  <hr class="w-25 mx-auto mb-4">
-  <div id="carouselExampleAutoplaying" class="carousel slide w-75 mt-4" data-bs-ride="carousel">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-              <h2 class="mb-3 fs-4">Bachelor of Engineering<br> (Computer Science)</h2>
-              <h4 class="fs-5">KJ College of Engineering and Management Research, Pune</h4>
-              <h5>Passing Year: 2024</h5>
-              <h5>CGPA: 7.27</h5>
-          </div>
-          <div class="carousel-item">
-              <h2 class="mb-3 fs-4">HSC (Higher Secondary School Certificate)</h2>
-              <h4 class="fs-5">SCSV Junior College Bhor</h4>
-              <h5>Passing Year: 2020</h5>
-              <h5>Percentage: 68%</h5>
-          </div>
-          <div class="carousel-item">
-              <h2 class="mb-3 fs-4">SSC (Secondary School Certificate)</h2>
-              <h4 class="fs-5">R R Vidhyalaya Bhor, Pune</h4>
-              <h5>Passing Year: 2018</h5>
-              <h5>Percentage: 86%</h5>
-          </div>
+  <body style="background-color: rgb(223, 238, 250)">
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      style="background-color: rgb(0, 0, 0); color: white"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Vinayak</a>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-light">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#aboutMe">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#education"
+                >Education</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#contact"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-5 text-light" href="#portfolio"
+                >My Portfolio</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-      </button>
-  </div>
-</div>
-<!--Education end-->
+    </nav>
+    <!-- Navbar End -->
 
 
- <!-- skills start-->
- <div class="container text-white py-5" id="skills">
-  <h1 class="text-center">Skills</h1>
-  <hr class="w-25 mx-auto mb-4">
-  
-  <div class="row justify-content-center">
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class=" skill-box text-center p-4 border border-white rounded-3 b-card">
-              <i class="fa-brands fa-html5 fa-3x mb-2"></i>
-              <h5>HTML5</h5>
-              <p>Structure of web documents.</p>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="skill-box text-center p-4 border border-white rounded-3">
-              <i class="fa-brands fa-css3-alt fa-3x mb-2"></i>
-              <h5>CSS</h5>
-              <p>Styling and layout.</p>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="skill-box text-center p-4 border border-white rounded-3">
-              <i class="fa-brands fa-bootstrap fa-3x mb-2"></i>
-              <h5>Bootstrap</h5>
-              <p>Responsive design framework.</p>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="skill-box text-center p-4 border border-white rounded-3">
-              <i class="fa-brands fa-js fa-3x mb-2"></i>
-              <h5>JavaScript</h5>
-              <p>Dynamic web applications.</p>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="skill-box text-center p-4 border border-white rounded-3">
-              <i class="fa-brands fa-react fa-3x mb-2"></i>
-              <h5>React</h5>
-              <p>Building UI components.</p>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="skill-box text-center p-4 border border-white rounded-3">
-              <i class="fa-brands fa-java fa-3x mb-2"></i>
-              <h5>Java</h5>
-              <p>Enterprise applications.</p>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="skill-box text-center p-4 border border-white rounded-3">
-              <i class="fa-solid fa-database fa-3x mb-2"></i>
-              <h5>MySQL</h5>
-              <p>Relational databases.</p>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="skill-box text-center p-4 border border-white rounded-3">
-              <i class="fa-brands fa-python fa-3x mb-2"></i>
-              <h5>Python</h5>
-              <p>Versatile programming.</p>
-          </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="skill-box text-center p-4 border border-white rounded-3">
-              <i class="fa-solid fa-database fa-3x mb-2"></i>
-              <h5>MongoDB</h5>
-              <p>NoSQL database.</p>
-          </div>
-      </div>
-  </div>
-</div>
+    <!-- Me Start -->
+    <div
+      class="container-fluid text-dark"
+      style="min-height: 100vh"
+    >
+      <div
+        class="row justify-content-center align-items-center text-center text-md-start"
+        style="min-height: 100vh; padding: 05%"
+      >
+        <!-- Column for Photo -->
+        <div class="col-lg-5 col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+          <img
+            src="images/me-removebg.png"
+            class="img-fluid rounded-circle mx-auto d-block"
+            alt="Your Photo"
+            style="max-width: 70%; height: auto"
+          />
+        </div>
 
-<!--skills end-->
+        <!-- Column for Information -->
+        <div class="col-lg-6 col-md-6 ps-md-5 mt-3 mt-md-0" data-aos="fade-left">
+          <h1 class="display-5 fw-bold">Hello, It's me</h1>
+          <h2 class="fw-bold fs-2 typing-loop">Vinayak Kumkar</h2>
 
-     <!-- Projects Start -->
-<div class="container py-5 text-white text-center" id="project">
-  <h1>Projects</h1>
-  <hr class="w-25 mx-auto mb-5">
-
-  <div class="row d-flex justify-content-center gap-4">
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card bg-dark text-white">
-        <img src="images/img1.png" class="card-img-top" alt="Hotel Management System UI" style="height: 180px; object-fit: cover;">
-        <div class="card-body">
-          <h5 class="card-title">Hotel Management System <br>(Java, MySQL)</h5>
-          <p class="card-text">Developed a system for room booking, customer management, billing, and inventory tracking.</p>
-          <a href="https://github.com/Vinayak180302/Hotel-management-system" target="_blank" class="btn btn-light">Link</a>
+          <h3 class="mb-3 fs-4">
+            And I'm a
+            <span id="changing-text" class="" style="color: rgb(194, 118, 209)"
+              >Developer</span
+            >
+          </h3>
+          <h4 class="fs-5 mb-3">Email: vinayakkumkar2002@gmail.com</h4>
+          <h4 class="fs-5 mb-0">Phone: +91 7218030210</h4>
         </div>
       </div>
     </div>
+    <!-- Me End -->
 
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card bg-dark text-white">
-        <img src="images/img3.png" class="card-img-top" alt="Weather Website UI" style="height: 180px; object-fit: cover;">
-        <div class="card-body">
-          <h5 class="card-title">Weather Website <br>(HTML, CSS, JavaScript)</h5>
-          <p class="card-text">Responsive web app providing real-time weather updates using OpenWeather API.</p>
-          <a href="https://vinayak180302.github.io/weather-website/" target="_blank" class="btn btn-light">Link</a>
+
+    <!--About me -->
+    <div
+      class="container-fluid text-center text-light d-flex flex-column justify-content-center align-items-center"
+      style="min-height: 100vh"
+      id="aboutMe"
+    >
+      <h1 class="display-4 mb-4 text-dark fw-bold fs-1">About Me</h1>
+      <h4 class="w-75 fa-twitter fs-4 text-dark" data-aos="zoom-in-up">
+        Highly motivated Computer Engineering graduate with a strong foundation
+        in software and web development. Proficient in Java, HTML, CSS,
+        JavaScript, ReactJS, Python, SQL and MongoDB. Experienced in building
+        responsive web applications and implementing machine learning models.
+        Demonstrates strong problem-solving skills, attention to detail, and
+        eagerness to contribute to impactful projects in a dynamic team
+        environment..
+      </h4>
+      <a href="#projects" class="btn btn-dark mt-5 text-light">See Projects</a>
+    </div>
+    <!-- About me end -->
+
+
+    <!-- Skills Start -->
+    <div
+      class="container py-5 text-dark"
+      id="skills"
+      style="background-color: rgb(223, 238, 250)"
+    >
+      <h1 class="text-center mt-5">Skills</h1>
+      <hr class="w-25 mx-auto mb-4" />
+
+      <div class="row justify-content-center"  data-aos="zoom-in-up">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div
+            class="skill-box text-center p-4 border border-dark rounded-3 shadow-sm bg-white"
+          >
+            <i class="fa-brands fa-html5 fa-3x mb-2 text-danger"></i>
+            <h5 class="fw-bold">HTML5</h5>
+            <p>Structure of web documents.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div
+            class="skill-box text-center p-4 border border-dark rounded-3 shadow-sm bg-white"
+          >
+            <i class="fa-brands fa-css3-alt fa-3x mb-2 text-primary"></i>
+            <h5 class="fw-bold">CSS</h5>
+            <p>Styling and layout.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div
+            class="skill-box text-center p-4 border border-dark rounded-3 shadow-sm bg-white"
+          >
+            <i class="fa-brands fa-bootstrap fa-3x mb-2 text-indigo"></i>
+            <h5 class="fw-bold">Bootstrap</h5>
+            <p>Responsive design framework.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div
+            class="skill-box text-center p-4 border border-dark rounded-3 shadow-sm bg-white"
+          >
+            <i class="fa-brands fa-js fa-3x mb-2 text-warning"></i>
+            <h5 class="fw-bold">JavaScript</h5>
+            <p>Dynamic web applications.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div
+            class="skill-box text-center p-4 border border-dark rounded-3 shadow-sm bg-white"
+          >
+            <i class="fa-brands fa-react fa-3x mb-2 text-info"></i>
+            <h5 class="fw-bold">React</h5>
+            <p>Building UI components.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div
+            class="skill-box text-center p-4 border border-dark rounded-3 shadow-sm bg-white"
+          >
+            <i class="fa-brands fa-java fa-3x mb-2 text-primary"></i>
+            <h5 class="fw-bold">Java</h5>
+            <p>Enterprise applications.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div
+            class="skill-box text-center p-4 border border-dark rounded-3 shadow-sm bg-white"
+          >
+            <i class="fa-solid fa-database fa-3x mb-2 text-secondary"></i>
+            <h5 class="fw-bold">MySQL</h5>
+            <p>Relational databases.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div
+            class="skill-box text-center p-4 border border-dark rounded-3 shadow-sm bg-white"
+          >
+            <i class="fa-brands fa-python fa-3x mb-2 text-success"></i>
+            <h5 class="fw-bold">Python</h5>
+            <p>Versatile programming.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div
+            class="skill-box text-center p-4 border border-dark rounded-3 shadow-sm bg-white"
+          >
+            <i class="fa-solid fa-database fa-3x mb-2 text-success"></i>
+            <h5 class="fw-bold">MongoDB</h5>
+            <p>NoSQL database.</p>
+          </div>
         </div>
       </div>
     </div>
+    <!-- Skills End -->
 
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card bg-dark text-white">
-        <img src="images/imgscreenshot.png" class="card-img-top" alt="Personal Portfolio Screenshot" style="height: 180px; object-fit: cover;">
-        <div class="card-body">
-          <h5 class="card-title">Personal Portfolio <br>(HTML, CSS, Bootstrap)</h5>
-          <p class="card-text">Built a personal portfolio to showcase skills and projects.</p>
-          <a href="#" target="_blank" class="btn btn-light">Link</a>
+
+    <!-- Project Start -->
+    <div
+      class="container py-5 text-dark text-center min-vh-100 d-flex flex-column justify-content-center"
+      id="projects"
+    >
+      <h1 class="mt-5">Projects</h1>
+      <hr class="w-25 mx-auto mb-5" />
+
+      <div class="row d-flex justify-content-center g-4"  data-aos="zoom-in-up">
+        <!-- Project Card -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white h-100 shadow-sm project-card">
+            <img
+              src="images/img5.png"
+              class="card-img-top"
+              alt="Hotel Management System UI"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Hotel Management System <br />(Java, MySQL)
+              </h5>
+              <p class="card-text">
+                System for room booking, customer records, billing, and
+                inventory.
+              </p>
+              <a
+                href="https://github.com/Vinayak180302/Hotel-management-system"
+                target="_blank"
+                class="btn btn-outline-light mt-auto"
+                >See Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white h-100 shadow-sm project-card">
+            <img
+              src="images/img3.png"
+              class="card-img-top"
+              alt="Weather Website UI"
+              style="height: 180px; object-fit: cover"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Weather Website <br />(HTML, CSS, JavaScript)
+              </h5>
+              <p class="card-text">
+                Responsive app showing live weather using OpenWeather API.
+              </p>
+              <a
+                href="https://vinayak180302.github.io/weather-website/"
+                target="_blank"
+                class="btn btn-outline-light mt-auto"
+                >See Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white h-100 shadow-sm project-card">
+            <img
+              src="images/img4.png"
+              class="card-img-top"
+              alt="Personal Portfolio Screenshot"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Personal Portfolio <br />(HTML, CSS, Bootstrap, JavaScript)
+              </h5>
+              <p class="card-text">
+                Showcases skills, resume, and contact information.
+              </p>
+              <a href="#" target="_blank" class="btn btn-outline-light mt-auto"
+                >See Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white h-100 shadow-sm project-card">
+            <img
+              src="images/img6.png"
+              class="card-img-top"
+              alt="BookNest Project Screenshot"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">BookNest <br />(HTML, CSS, Bootstrap)</h5>
+              <p class="card-text">
+                Online bookstore app to browse, search, and purchase books
+                easily.
+              </p>
+              <a
+                href="https://booknest-online-book-store.netlify.app/"
+                target="_blank"
+                class="btn btn-outline-light mt-auto"
+                >See Project</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Projects End -->
+    <!-- Project End -->
 
 
-
-    <!--footer start-->
-    <div class="container-fluid d-flex flex-column justify-content-center align-items-center text-white vh-50 bg-secondary " id="contact">
-      <h1 >Get in Touch</h1>
-      <hr class="w-25 mx-auto" style="margin-bottom: 50px;">
+    <!-- Education Section Start -->
+    <div
+      class="container py-5 text-dark min-vh-100 bg-education"
+      id="education"
+    >
+      <h1 class="text-center mt-5">Education</h1>
+      <hr class="w-25 mx-auto mb-5" />
 
       <div class="row">
-        <div class="col mb-4">
-          <input type="text" class="form-control" placeholder="Name" aria-label="First name" style="width: 200px;">
+        <!-- Education Item 1 -->
+        <div class="col-12 mb-4" data-aos="fade-right">
+          <div class="education-item text-center">
+            <h4>KJ College of Engineering, Pune</h4>
+            <p>B.E in Computer Science</p>
+            <p>Graduation: 2024</p>
+          </div>
         </div>
-  
-        <div class="col mb-4">
-          <input type="text" class="form-control" placeholder="Phone No" aria-label="First name" style="width: 200px;">
+
+        <!-- Education Item 2 -->
+        <div class="col-12 mb-4" data-aos="fade-left">
+          <div class="education-item text-center">
+            <h4>HSC (Higher Secondary School Certificate)</h4>
+            <p>SCSV Junior College Bhor</p>
+            <p>Passing Year: 2020</p>
+          </div>
         </div>
 
+        <!-- Education Item 3 -->
+        <div class="col-12 mb-4" data-aos="fade-right">
+          <div class="education-item text-center">
+            <h4>SSC (Secondary School Certificate)</h4>
+            <p>R R Vidhyalaya Bhor, Pune</p>
+            <p>Passing Year: 2018</p>
+          </div>
+        </div>
       </div>
-     
-
-      <div class="col mb-2">
-        <input type="text" class="form-control" placeholder="Email" aria-label="First name" style="width: 420px;">
-      </div>
-
-      <div class="mb-3 w-22">
-        <label for="exampleFormControlTextarea1" class="form-label" style="width: 400px;">Message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-
-      <button type="button" class="btn btn-dark mb-5">Send Message</button>
-      <div class="d-flex mb-3">
-       <a href="https://www.linkedin.com/in/vinayak-kumkar/" target="_blank"><i class="fa-brands fa-linkedin fa-2x me-4"></i></a> 
-       <a href="https://github.com/Vinayak180302" target="_blank"><i class="fa-brands fa-github fa-2x me-4"></i></a> 
-        <a href="#" target="_blank"><i class="fa-brands fa-twitter fa-2x me-4"></i></a>
-      </div>
-
-      <div class="d-flex mt-4">
-        <i class="fa-regular fa-copyright"></i>&nbsp;&nbsp;
-        <p>Copyright VINAYAK. All Rights Reserved</p>
-      </div>
-      
-
-
-
-      
-
-      
-
-
     </div>
-    <!--footer end-->
-    
+    <!-- Education Section End -->
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Footer Section Start -->
+    <!-- Contact me -->
+    <footer class="bg-dark text-white py-4" id="contact">
+      <div class="container text-center">
+        <h3>Contact Me</h3>
+        <hr class="w-25 mx-auto mb-4" />
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8 col-sm-12">
+            <form id="contact-form">
+              <input type="hidden" name="_captcha" value="false" />
+
+              <div class="form-group mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="text-center py-4">
+                <button type="submit" class="btn btn-outline-light btn-lg">
+                  Submit
+                </button>
+              </div>
+            </form>
+
+            <!-- Message shown after submission -->
+            <div
+              id="thank-you-message"
+              class="text-success mt-4 fw-bold"
+              style="display: none"
+            >
+              ✅ Thank you! Your message has been sent.
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="mt-4">
+              <a
+                href="https://www.linkedin.com/in/vinayak-kumkar/"
+                target="_blank"
+                class="text-white me-4"
+              >
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+              </a>
+              <a
+                href="https://github.com/Vinayak180302"
+                target="_blank"
+                class="text-white me-4"
+              >
+                <i class="fa-brands fa-github fa-2x"></i>
+              </a>
+              <a
+                href="https://x.com/i/flow/login"
+                target="_blank"
+                class="text-white me-4"
+              >
+                <i class="fa-brands fa-twitter fa-2x"></i>
+              </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="mt-4">
+              <p class="mb-0">&copy; 2025 Vinayak. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+   
   </body>
 </html>
